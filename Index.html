@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Transactions</title>
+
+  <!-- Fonts -->
+
+  <!-- FavIcon -->
+  <link rel="shortcut icon" href="./images/images.png" type="image/x-icon">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="Css/bootstrap.min.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="Css/all.min.css" />
+  <!-- main style -->
+  <link rel="stylesheet" href="Css/style.css" />
+  <!-- media style -->
+  <link rel="stylesheet" href="Css/media.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- ------------ Search Input ------------ -->
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="inner">
+          <div class="input-group my-5">
+            <span class="input-group-text px-4 rounded-start-pill bg-success-subtle text-primary"><i
+                class="fa-solid fa-search fa-2x"></i></span>
+            <div class="form-floating">
+              <input id="SearchByName" type="text" class="form-control rounded-end-pill" id="floatingInputGroup1"
+                placeholder="Username">
+              <label for="floatingInputGroup1">Search By Customer Name</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="inner">
+          <div class="input-group my-5">
+            <span class="input-group-text px-4 rounded-start-pill bg-success-subtle text-success"><i
+                class="fa-solid fa-search fa-2x"></i></span>
+            <div class="form-floating">
+              <input id="SearchByAmount" type="number" class="form-control rounded-end-pill" id="floatingInputGroup1"
+                placeholder="Username">
+              <label for="floatingInputGroup1">Search By Total Transaction Amount</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- ---------- Table Of Customers  -------------------------->
+    <div>
+      <table class="table table-striped text-center ">
+
+        <tbody id="row">
+          <thead>
+            <th class="bg-primary text-white">
+              <h2>Name</h2>
+            </th>
+            <th class="bg-primary text-white">
+              <h2>Total Transaction Amount</h2>
+            </th>
+            <th class="bg-primary text-white">
+              <h2>Transactions Per Day</h2>
+            </th>
+          </thead>
+
+          <div>
+            <h2></h2>
+            <!-- <tr  class="fs-5 fw-bold">
+              <td>Mohamad Tawfiiq</td>
+              <td>5000</td>
+              <td><button class="btn btn-outline-info py-1 px-4 fs-5 fw-bold">View</button></td>
+            </tr> -->
+
+          </div>
+
+        </tbody>
+
+      </table>
+    </div>
+
+
+
+    <!-- --------------- Charts ( Graph ) ----------------------------------------->
+    <div id="Cahrts" class="w-75 mx-auto my-5">
+
+      <h2 class="text-center">Please Click On <span class="text-info border border-info rounded px-3">View</span> Button
+        To Show The Charts Of Transaction Of Selected Customer</h2>
+      <!-- <canvas id="myChart"></canvas> -->
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./Js/Main.js"></script>
+
+</body>
